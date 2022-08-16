@@ -1,0 +1,29 @@
+# progrms#include<stdio.h>
+int main()
+{
+	int arr[20],n,i,j;
+	int flag;
+	printf("enter size of array\n");
+	scanf("%d",&n);
+	printf("enter elements into array\n");
+	for(i=n-1;i>=0;i--)
+	scanf("%d",&arr[i]);
+	for(i=0;i<n;i++)
+	{
+		if(arr[i]!=1)
+		{
+			flag=0;
+			for(j=2;j<arr[i];j++)
+			{
+				if(arr[i]%j==0)
+				{
+					flag=1;
+					break;
+				}
+			}
+		
+		if(flag==0)
+		printf("primes are %d\n",arr[i]);
+	}
+	}
+}
