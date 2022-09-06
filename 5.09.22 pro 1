@@ -1,0 +1,17 @@
+include<stdio.h>
+int main()
+{
+	int n,m;
+	scanf("%d%d",&n,&m);
+	display(n,m);
+}
+int display(int start,int end)
+{
+	if(start>end)
+	return 0;
+	else
+	printf("%d\t",start);
+	display(start+1,end);
+		printf("%d\t",start);
+		return 0;
+}
