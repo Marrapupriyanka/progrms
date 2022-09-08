@@ -1,0 +1,22 @@
+include<stdio.h>
+ void main()
+{
+int t1=0,t2=1,t3,n,i=3,ele,c=0;
+scanf("%d",&n);
+printf("enter search element\n");
+scanf("%d",&ele);
+while(i<=n)
+{
+t3=t1+t2;
+if(t3==ele)
+c++;
+t1=t2;
+t2=t3;
+t3=t1;    
+i++;
+}
+if(c>0)
+printf("YES");
+else
+printf("NO");
+}
